@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://unpkg.com/vue@next"></script>
+
+    <title>个人网站</title>
+
+</head>
+
+<style type="text/css">
+
+    * {
+
+        box-sizing: border-box;
+
+    }
+
+    /* 设置 body 元素的样式 */
+
+    
+
+    body {
+
+        font-family: arial;
+
+        margin: 0;
+
+    }
+
+    /* 标题 / LOGO */
+
+    
+
+    .header {
+
+        padding: 10px;
+
+        text-align: center;
+
+        background: #f6c1f4;
+
+        color: rgb(255, 255, 255);
+
+    }
+
+    /* 设置顶部导航栏样式 */
+    .navbar {
+
+        display: flex;
+
+        background-color: #d179ca;
+
+    }
+
+    /* 设置导航条链接演示 */
+    .navbar a {
+
+        color: white;
+
+        padding: 14px 20px;
+
+        text-decoration: none;
+
+        text-align: center;
+
+    }
+
+    /* 更改鼠标悬停时的颜色 */
+    .navbar a:hover {
+
+        background-color: #ddd;
+
+        color: rgb(255, 255, 255);
+
+    }
+
+    /* 列容器 */
+    .row {
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+    }
+
+    /* 创建并排的非等列 */
+
+    /* 侧栏 / 左侧列 */
+    .side {
+
+        flex: 30%;
+
+        background-color: rgb(255, 255, 255);
+
+        padding: 20px;
+
+    }
+
+    /* 主列 */
+    .main {
+
+        flex: 70%;
+
+        background-color: rgb(255, 255, 255);
+
+        padding: 20px;
+
+    }
+
+    /* 伪图像，仅供示例 */
+    .fakeimg {
+
+        background-color: #faadb5;
+
+        width: 100%;
+
+        padding: 10px;
+
+    }
+
+    /* 页脚 */
+    .footer {
+
+        padding: 10px;
+
+        text-align: center;
+
+        background: #f7b4bc;
+
+    }
+
+    /* 响应式布局 - 当屏幕小于 700 像素宽时，让两列堆叠而不是并排 */
+    @media screen and (max-width:700px) {
+
+        .row,
+
+        .navbar {
+
+            flex-direction: column;
+
+        }
+
+    }
+
+</style>
+<body>
+
+    <div id="" class="header">
+
+        <h3>兴趣爱好</h3>
+
+
+    </div>
+
+    <div class="row">
+
+        <div class="side">
+
+            <h3>关于我</h3>
+
+            <h5>喜欢绘画和小动物</h5>
+				<img src="c4f6d85fed03806f673f7387ecbd95f.jpg"height="200px" />
+				<img src="c4b72fecdf57d3fa83f52f8af89b292.jpg"height="200px" />
+				<img src="7da257bc082caed70e02826590e8e78.jpg"height="200px" />
+                <img src="0597c033034f368925bcdf80ad946e8.jpg"height="200px" />
+        </div>
+        
+        <div class="main">
+
+            <h5>享受美食</h5>
+
+			<img src="2b7a456872d67159ea5b0724c91c28e.jpg"height="200px" /> 
+
+            <p>对于我来说，吃到一种美食莫过于是一种幸福</p>
+
+            <p>这是我五一假期时邀请爱人共同品尝的美食，个人尤其喜爱那道酸甜口的松鼠鱼
+
+            </p>
+
+            <br>
+
+            <h5>享受音乐</h5>
+
+            <img src="792e77de0f973029ab94dd18163328b.jpg"height="200px" />
+
+            <p>喜欢听舒缓或轻快的女声，很是悦耳，让人心情愉快</p>
+
+            <h5>享受娱乐</h5>
+
+            <img src="4a07c4ddc03e34f400ad10dc73856a0.jpg"height="200px" />
+
+            <p>空闲喜欢玩一些游戏，比如以闪亮之名，体验换装捏脸的乐趣，欣赏角色的美</p>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer">
+
+        <h2>兴趣爱好</h2>
+
+    </div>
+
+</body>
+
+<script>
+
+    var app = Vue.createApp({
+
+        data() {
+
+            return {
+
+                message: 'yufuchang.com '
+
+            }
+
+        },
+
+        template: "<h2>{{message}}</h2>"
+
+    })
+
+    var vm = app.mount("#app")
+
+</script>
+</html>
